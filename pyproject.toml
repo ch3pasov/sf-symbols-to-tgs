@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sf-symbols-to-tgs"
+version = "0.1.0"
+description = "Convert SF Symbols and PNG alpha masks into Telegram-compatible .tgs files."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Anatoliy Ch" }]
+keywords = ["sf-symbols", "telegram", "tgs", "lottie", "macos"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: MacOS X",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+]
+dependencies = ["Pillow>=10"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+sf2tgs = "sf_symbols_to_tgs.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/anatoliy-ch/sf-symbols-to-tgs"
+Issues = "https://github.com/anatoliy-ch/sf-symbols-to-tgs/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

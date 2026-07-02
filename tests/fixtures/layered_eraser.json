@@ -1,0 +1,41 @@
+{
+  "symbol": "fixture.layered",
+  "source": "CUINamedVectorGlyph.monochromeLayers.shape",
+  "bounds": { "x": 0, "y": 0, "width": 100, "height": 100 },
+  "content_bounds": { "x": 0, "y": 0, "width": 100, "height": 100 },
+  "layers": [
+    {
+      "name": "base",
+      "index": 0,
+      "is_eraser": false,
+      "opacity": 1,
+      "stroke_width": 0,
+      "elements": [
+        { "type": "move", "points": [{ "x": 0, "y": 0 }] },
+        { "type": "line", "points": [{ "x": 100, "y": 0 }] },
+        { "type": "line", "points": [{ "x": 100, "y": 100 }] },
+        { "type": "line", "points": [{ "x": 0, "y": 100 }] },
+        { "type": "close", "points": [] }
+      ]
+    },
+    {
+      "name": "eraser",
+      "index": 1,
+      "is_eraser": true,
+      "opacity": 0,
+      "stroke_width": 0,
+      "elements": [
+        { "type": "move", "points": [{ "x": 25, "y": 25 }] },
+        { "type": "line", "points": [{ "x": 75, "y": 25 }] },
+        { "type": "line", "points": [{ "x": 75, "y": 75 }] },
+        { "type": "line", "points": [{ "x": 25, "y": 75 }] },
+        { "type": "close", "points": [] },
+        { "type": "move", "points": [{ "x": 40, "y": 40 }] },
+        { "type": "line", "points": [{ "x": 60, "y": 40 }] },
+        { "type": "line", "points": [{ "x": 60, "y": 60 }] },
+        { "type": "line", "points": [{ "x": 40, "y": 60 }] },
+        { "type": "close", "points": [] }
+      ]
+    }
+  ]
+}

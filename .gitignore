@@ -1,0 +1,28 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tmp/
+build/
+dist/
+*.egg-info/
+
+# Generated conversion outputs
+out/
+build-native/
+*.tgs
+
+# Apple assets are not redistributed by this project.
+Assets.car
+*.car
+symbol_order.plist
+symbol_categories.plist
+symbol_search.plist
+categories.plist
+name_aliases.strings
+name_availability.plist
+nofill_to_fill.strings

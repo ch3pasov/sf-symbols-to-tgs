@@ -1,0 +1,13 @@
+{
+  "symbol": "fixture.path",
+  "source": "test.fixture",
+  "bounds": { "x": 0, "y": 0, "width": 100, "height": 100 },
+  "content_bounds": { "x": 0, "y": 0, "width": 100, "height": 100 },
+  "elements": [
+    { "type": "move", "points": [{ "x": 0, "y": 0 }] },
+    { "type": "line", "points": [{ "x": 100, "y": 0 }] },
+    { "type": "quad", "points": [{ "x": 100, "y": 50 }, { "x": 50, "y": 100 }] },
+    { "type": "curve", "points": [{ "x": 20, "y": 100 }, { "x": 0, "y": 80 }, { "x": 0, "y": 0 }] },
+    { "type": "close", "points": [] }
+  ]
+}
