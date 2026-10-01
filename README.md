@@ -11,6 +11,8 @@ It does not redistribute Apple SF Symbols assets, generated symbol catalogs, or 
 
 Published pack examples: <https://t.me/ch_an/2413>
 
+Telegram atlas: [Browse SF Symbols emoji packs](https://t.me/dot_ch_bot?start=sf7_emojis).
+
 ## Requirements
 
 - macOS.
