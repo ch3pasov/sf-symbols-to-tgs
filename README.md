@@ -28,6 +28,26 @@ source .venv/bin/activate
 pip install -e ".[dev]"
 ```
 
+## Tests
+
+Run the unit tests without Apple assets or Telegram credentials:
+
+```sh
+python -m pytest -q --ignore=tests/test_native_integration.py
+```
+
+GitHub Actions runs these tests on Linux with Python 3.10, 3.11, and 3.12 for
+pull requests and pushes to `main`, and on manual runs. Tests use synthetic
+geometry and PNG masks; Telegram API calls are mocked. This workflow does not
+publish packages or upload emoji packs.
+
+The separate native integration test requires macOS, the native build tools,
+and a local SF Symbols catalog supplied through `SF_SYMBOLS_ASSETS_CAR`:
+
+```sh
+SF_SYMBOLS_ASSETS_CAR=/path/to/Assets.car python -m pytest tests/test_native_integration.py
+```
+
 ## Finding SF Symbols Assets
 
 Download and install SF Symbols from Apple's developer site:

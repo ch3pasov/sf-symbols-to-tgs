@@ -30,8 +30,8 @@ dev = ["pytest>=8"]
 sf2tgs = "sf_symbols_to_tgs.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/anatoliy-ch/sf-symbols-to-tgs"
-Issues = "https://github.com/anatoliy-ch/sf-symbols-to-tgs/issues"
+Homepage = "https://github.com/ch3pasov/sf-symbols-to-tgs"
+Issues = "https://github.com/ch3pasov/sf-symbols-to-tgs/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
